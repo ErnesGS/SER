@@ -12,7 +12,7 @@ html, body{
 #intro{
     display: flex;
     flex-direction: column;
-    background-image: url('sofa.jpeg');
+    background-image: url('fondo_index.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100vh;
@@ -34,13 +34,15 @@ html, body{
     justify-content: space-around;
     margin: 10px;
 }
+
 .titulo{
     margin-top: 100px;
-    margin-left: 50px;
-    width: 50%;
+    width: 100%;
     font-size: 30px;
-    text-align: left;
+    font-family: "Quicksand";
+    text-align: center;
 }
+
 .titulo button{
     font-size: 15px;
     width: 100px;

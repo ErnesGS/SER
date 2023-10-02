@@ -13,11 +13,14 @@ html, body{
 #intro{
     display: flex;
     flex-direction: column;
-    background-image: url('sofa.jpeg');
+    background-image: url('fondo_menu.jpg');
     background-repeat: no-repeat;
     min-height: 100vh;
     background-size: 100% 100vh;
 }
+
+
+
 .menu {
     display: flex;
     flex-flow: row nowrap;
@@ -30,14 +33,15 @@ html, body{
     list-style-type: none;
     opacity: 1;
 }
+
 .titulo{
     margin-top: 100px;
-    margin-left: 50px;
-    font-family: ;
-    width: 50%;
+    width: 100%;
     font-size: 30px;
-    text-align: left;
+    font-family: "Quicksand";
+    text-align: center;
 }
+
 .titulo button{
     font-size: 15px;
     width: 90px;
@@ -50,17 +54,31 @@ html, body{
    }
 
 .menu_opciones {
-    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
+
+.menu_opciones div{
+    width: 400px;
+    margin-top: 50px;
+}
+
+.menu_opciones div h4{
+    width: 400px;
+    text-align: center;
+    font-family: "Khand";
+    font-size: 40px;
+    margin: 10px;
+}
+
 .menu_imagenes{
-    width: 75vh;
-    border: 2px solid red;
+    width: 400px;
 }
 
 #flecha_abajo_info{
     width: 10vh;
 }
 
-.menu_opciones div {
-    border: 2px solid red;
-}
