@@ -20,15 +20,19 @@ html, body{
 }
 .menu {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     min-height: 23px;
-    margin: 0;
-    padding: 0;
     list-style-type: none;
     opacity: 1;
+}
+.menu div + div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
 }
 .titulo{
     margin-top: 100px;
@@ -39,11 +43,14 @@ html, body{
 }
 .titulo button{
     font-size: 15px;
-    width: 90px;
+    width: 100px;
 }
 .info{
     align-content: center;
     margin: auto;
+}
+.info img{
+    width: 70px;
 }
 #descrip{
     width: 50%;
@@ -62,4 +69,11 @@ html, body{
    display: flex;
    flex-direction: row;
    justify-content: center;
+}
+.pie img{
+    width: 40px;
+    margin: 10px;
+}
+.pie img {
+    width: 60px;
 }
