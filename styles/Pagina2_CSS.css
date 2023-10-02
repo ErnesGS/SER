@@ -15,7 +15,7 @@ html, body{
     flex-direction: column;
     background-image: url('sofa.jpeg');
     background-repeat: no-repeat;
-    min-height: 300vh;
+    min-height: 100vh;
     background-size: 100% 100vh;
 }
 .menu {
@@ -49,7 +49,18 @@ html, body{
     left: 650px;
    }
 
+.menu_opciones {
+    border: 2px solid red;
+}
+.menu_imagenes{
+    width: 75vh;
+    border: 2px solid red;
+}
+
 #flecha_abajo_info{
     width: 10vh;
 }
- 
+
+.menu_opciones div {
+    border: 2px solid red;
+}
