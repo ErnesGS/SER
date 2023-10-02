@@ -33,7 +33,6 @@ html, body{
 .titulo{
     margin-top: 100px;
     margin-left: 50px;
-    font-family: ;
     width: 50%;
     font-size: 30px;
     text-align: left;
@@ -45,4 +44,22 @@ html, body{
 .info{
     align-content: center;
     margin: auto;
+}
+#descrip{
+    width: 50%;
+    padding: 10%;
+    margin: auto;
+    border-bottom: black solid 1px;
+}
+#descrip h3{
+    font-size: 40px;
+    text-align: center;
+}
+#descrip p{
+    font-size: 20px;
+}
+.pie{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
 }
