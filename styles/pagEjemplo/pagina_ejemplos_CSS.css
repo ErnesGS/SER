@@ -1,21 +1,106 @@
+body {
+    background-color: #e9e9eb;
+}
+
 .intro{
     background-image: url('fondo_ladrillo.jpeg') ;
-    min-height: 60vh;
+    min-height: 100vh;
 }
 .menu{
     justify-content: space-around;
 }
+
+.menu a.special {
+    color: white;
+}
+
+#intro_ejemplos {
+    background-color: white;
+    border-radius: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+    box-shadow: 4px 4px 4px 4px lightgrey;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    width: 60%;
+}
+
+#intro_ejemplos h1 {
+    font-family: "Quicksand";
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid grey;
+}
+
+#contenedor_ejemplos {
+    width: 80%;
+    margin: auto;
+}
+
+.ejemplo {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0 40px;
+    box-shadow: 4px 4px 4px 4px lightgrey;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.ejemplo > div {
+    flex-flow: row wrap;
+}
+
+.ejemplo img {
+    width: 25vw;
+    min-height: 100%;
+}
+
+.titulos_estilos {
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: 2px solid grey;
+    margin-right: 20px;
+}
+
+.titulos_estilos p {
+    margin: 10px 0 10px;
+}
+
+.ejemplo_noimg {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-between;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.contenedor_precios {
+    font-weight: bold;
+    font-size: 1.4em;
+    background-color: rgb(255, 196, 0);
+    display: inline;
+    border-radius: 20%;
+    padding: 8px 15px;
+    box-shadow: 4px 4px 4px 4px lightgrey;
+    align-self: flex-start;
+    margin: 0 40px 40px 0;
+    transition: background-color 0.2s ease;
+}
+
+.contenedor_precios:hover {
+    background-color: grey;
+}
+
+.contenedor_precios p {
+    display: inline;
+}
+
 a {
     text-decoration: none;
-}
-.text{
     color: black;
-}
-.special{
-    color: #CDD1D6;
-}
-#tabla{
-    margin: auto;
-    display: flex;
-    flex-direction: row;
 }
