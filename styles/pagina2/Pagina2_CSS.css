@@ -46,12 +46,6 @@ html, body{
     font-size: 15px;
     width: 90px;
 }
-.info{
-    width: 10%;
-    position: relative;
-    top: 125px;
-    left: 650px;
-   }
 
 .menu_opciones {
     display: flex;
@@ -59,8 +53,8 @@ html, body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    border-bottom: black solid 1px;
 }
-
 .menu_opciones div{
     width: 400px;
     margin-top: 50px;
@@ -81,4 +75,5 @@ html, body{
 #flecha_abajo_info{
     width: 10vh;
 }
+    
 
