@@ -34,6 +34,7 @@ html, body{
     flex-direction: row;
     justify-content: space-around;
     margin: 10px;
+    text-decoration: none;
 }
 
 .titulo{
