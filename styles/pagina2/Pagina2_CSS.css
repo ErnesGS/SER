@@ -35,6 +35,18 @@ html, body{
 
 }
 
+.menu_arriba{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+
 .contenedor{
     background-color: #e9e9eb;
 }
