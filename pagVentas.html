@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/pagVentas.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/pagVentas/pagVentas.css"/>
 
     <title>Calculadora de Total</title>
     <style>
@@ -15,13 +19,17 @@
 </head>
 <body>
     <div class="cabecera">
-        <h2>
-            Interiorismo Susana
-        </h2>
-        <p>
-            Simple y estético
-
-        </p>
+        <div class="menu">
+            <a href="index.html" class="text">Inicio</a>
+            <a href="pagPlan.html">Planificación</a>
+            <a href="#" class="text"  id="selecionado">Catálogo</a>
+            <a href="PagEjemplo.html" class="text">Ejemplos</a>
+            <a href="pagina2.html" class="text">Volver</a>
+        </div>
+        <div class="titulo">
+            <h1>Catálogo</h1>
+            <h6>Interiorismo Susana</h6>
+        </div>
     </div>
     <div class="total">
     <h1>Productos</h1>
@@ -66,7 +74,7 @@
         
         <!-- Producto 1 -->
         <div class="producto">
-            <h2>Sofa de Diseño - €500</h2>
+            <h2>Sofá de Diseño - €500</h2>
             <img src="img/pagVentas/sofa.jpg" ><br>
             <button onclick="quitar(500)">Quitar</button>
             <span id="producto1">0</span> unidades
@@ -86,7 +94,7 @@
 
         <!-- Producto 3 -->
         <div class="producto">
-            <h2>sofa - €500</h2>
+            <h2>Sofá - €500</h2>
             <img src="img/pagVentas/sofa.jpg"><br>
             <button onclick="quitar(500)">Quitar</button>
             <span id="producto2">0</span> unidades
@@ -96,7 +104,7 @@
 
         <!-- Producto 4 -->
         <div class="producto">
-            <h2>aparador de madera - €1000</h2>
+            <h2>Aparador de madera - €1000</h2>
             <img src="img/pagVentas/aparador-madera.jpg"><br>
             <button onclick="quitar(1000)">Quitar</button>
             <span id="producto2">0</span> unidades
@@ -120,8 +128,16 @@
             }
         </style>
 
-
+        
     </div>
+    <div class="pie" ><!--pie-->
+            <a href="#"><img src="img/pagina1/twiter.png" alt="logo de twuiter"></a>
+            <a href="#"><img id="face" src="img/pagina1/facebook.png" alt="logo de faceboock"></a>
+            <a href="#"><img src="img/pagina1/Insta.png"alt="logo de Instagram"></a>
+            <a href="#"><img src="img/pagina1/whatapp.png"alt="logo de What"></a>
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=SuSI9u3TfAiBZ1vh" target="blank"><img src="img/pagina1/youtube.png"alt="logo de What"></a>
+        </div>
+
 </body>
 </html>
 
