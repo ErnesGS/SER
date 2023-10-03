@@ -3,8 +3,16 @@
 window.onload = function() {
     const crear = document.getElementById('generar');
     crear.addEventListener('click', crearTabla);
+    const silla = document.getElementById('sillas');
+    silla.addEventListener('click', filtrarMueble);
 };
-
+function cambiarColorCelda(celda) {
+    if (celda.style.backgroundColor === 'rgb(243, 229, 171)') {
+        celda.style.backgroundColor = 'white';
+    } else {
+        celda.style.backgroundColor = '#F3E5AB';
+    }
+}
 function crearTabla() {
     const ancho = parseInt(document.getElementById('ancho').value);
     const alto = parseInt(document.getElementById('largo').value);
@@ -31,15 +39,5 @@ function crearTabla() {
         const contenedorTabla = document.getElementById('Crear_tabla');
         contenedorTabla.innerHTML = ''; 
         contenedorTabla.appendChild(tabla);
-    }
-    
-    
-}
-
-function cambiarColorCelda(celda) {
-    if (celda.style.backgroundColor === 'rgb(243, 229, 171)') {
-        celda.style.backgroundColor = 'white';
-    } else {
-        celda.style.backgroundColor = '#F3E5AB';
-    }
+    }  
 }

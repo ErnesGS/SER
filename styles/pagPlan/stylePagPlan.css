@@ -2,7 +2,7 @@ body{
     background-color: #E9E9EB;
 }
 .intro{
-    background-image: url('fondo_ladrillo.jpeg') ;
+    background-image: url('../fondo_ladrillo.jpg') ;
     min-height: 50vh;
 }
 .menu{
@@ -31,15 +31,25 @@ a{
     display: flex;
     flex-direction: row;
 }
-.imagen-cat {
-    width: 200px;
+#dami{
+    width: 50%;
+    margin-left: 20px;
+}
+#muebles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: black 1px solid;
+}
+#muebles + div{
+    width: 80%;
+    margin: auto;
+}
+.cama,.sofa,.silla,.mesa,.estan {
+    width: 20%;
     height: 150px;
     margin: 10px;
 }
-#dami{
-    width: 50%;
-}
-
 #diseño{
     background-color: #E9E9EB;
     width: 50%;

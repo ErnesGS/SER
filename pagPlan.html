@@ -14,9 +14,9 @@
 			<div class="intro">
 				<div class="menu">
 					<a href="index.html" class="text">Inicio</a>
-					<a href="pagVentas.html" class="text">Catálogo</a>
-					<a href="#" id="selecionado">Diseño</a>
 					<a href="PagEjemplo.html" class="text">Ejemplos</a>
+					<a href="#" id="selecionado">Planificación</a>
+					<a href="pagVentas.html" class="text">Catálogo</a>
 					<a href="pagina2.html" class="text">Volver</a>
 				</div>
 				<div class="titulo">
@@ -25,9 +25,9 @@
 				</div>
                 <div id="tabla">
                     <div id="input">
-                        <input type="text" id="ancho" placeholder="Ancho">
+                        <input type="number" id="ancho" placeholder="Ancho" maxlength="15">
 						<br>
-						<input type="text" id="largo" placeholder="Largo">
+						<input type="number" id="largo" placeholder="Largo" maxlength="15">
 
                     </div>
                     <button id="generar">Generar</button>
@@ -36,33 +36,27 @@
             <div id="cuerpo">
                 <div id="dami"><!--Parte del catalogo de imagenes-->
 					<div id="galeria">
-						<h3>Catálogo</h3>
-						<label for="category-selector">Selecciona una categoría:</label>
-						<select id="category-selector">
-							<option value="todo">Todo</option>
-							<option value="sillas">Sillas</option>
-							<option value="mesas">Mesas</option>
-							<option value="estanterias">Estanterías</option>
-							<option value="sofas">Sofás</option>
-							<option value="camas">Camas</option>
-						</select>
+						<div id="muebles">
+							<h3 iC="todo" >Todo</h3>
+							<h3 id="sillas">Sillas</h3>
+							<h3 id="mesas">Mesas</h3>
+							<h3 id="estanterias">Estanterías</h3>
+							<h3 id="sofas">Sofás</h3>
+							<h3 id="camas">Camas</h3>
+						</div>
 						<div>
-							<img src="img/PagPlan/estanteria1.jpg" alt="imagen de estanteria" class="imagen-cat">
-							<img src="img/PagPlan/estanteria2.jpg" alt="imagen de estanteria" class="imagen-cat">
-							<img src="img/PagPlan/estanteria3.jpg" alt="imagen de estanteria" class="imagen-cat">
-							<img src="img/PagPlan/mesa1.jpg" alt="imagen de mesa" class="imagen-cat">
-							<img src="img/PagPlan/mesa2.jpg" alt="imagen de mesa" class="imagen-cat">
-							<img src="img/PagPlan/mesa3.jpg" alt="imagen de mesa" class="imagen-cat">
-							<img src="img/PagPlan/mesa4.jpg" alt="imagen de mesa" class="imagen-cat">
-							<img src="img/PagPlan/silla1.jpg" alt="imagen de silla" class="imagen-cat">
-							<img src="img/PagPlan/silla2.jpg" alt="imagen de silla" class="imagen-cat">
-							<img src="img/PagPlan/sofa1.jpg" alt="imagen de sofa" class="imagen-cat">
-							<img src="img/PagPlan/sofa2.jpg" alt="imagen de sofa" class="imagen-cat">
-							<img src="img/PagPlan/sofa3.jpg" alt="imagen de sofa" class="imagen-cat">
-							<img src="img/PagPlan/sofa4.jpg" alt="imagen de sofa" class="imagen-cat">
-							<img src="img/PagPlan/cama1.jpg" alt="imagen de cama" class="imagen-cat">
-							<img src="img/PagPlan/cama2.jpg" alt="imagen de cama" class="imagen-cat">
-							<img src="img/PagPlan/cama3.jpg" alt="imagen de cama" class="imagen-cat">
+							<img src="img/PagPlan/estanteria1.jpg" alt="imagen de estanteria" class="estan">
+							<img src="img/PagPlan/estanteria2.jpg" alt="imagen de estanteria" class="estan">
+							<img src="img/PagPlan/estanteria3.jpg" alt="imagen de estanteria" class="estan">
+							<img src="img/PagPlan/mesa1.jpg" alt="imagen de mesa" class="mesa">
+							<img src="img/PagPlan/mesa2.jpg" alt="imagen de mesa" class="mesa">
+							<img src="img/PagPlan/mesa3.jpg" alt="imagen de mesa" class="mesa">
+							<img src="img/PagPlan/silla1.jpg" alt="imagen de silla" class="silla">
+							<img src="img/PagPlan/silla2.jpg" alt="imagen de silla" class="silla">
+							<img src="img/PagPlan/sofa1.jpg" alt="imagen de sofa" class="sofa">
+							<img src="img/PagPlan/sofa2.jpg" alt="imagen de sofa" class="sofa">
+							<img src="img/PagPlan/cama1.jpg" alt="imagen de cama" class="cama">
+							<img src="img/PagPlan/cama2.jpg" alt="imagen de cama" class="cama">
 						</div>
 					</div>
                 </div>
