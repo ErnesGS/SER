@@ -10,6 +10,7 @@ html, body{
     color: #191919;
 
 }
+
 #intro{
     display: flex;
     flex-direction: column;
@@ -17,9 +18,8 @@ html, body{
     background-repeat: no-repeat;
     min-height: 100vh;
     background-size: 100% 100vh;
+    background-attachment: fixed;
 }
-
-
 
 .menu {
     display: flex;
@@ -33,6 +33,10 @@ html, body{
     list-style-type: none;
     opacity: 1;
 
+}
+
+.contenedor{
+    background-color: #e9e9eb;
 }
 
 .titulo{
@@ -53,12 +57,26 @@ html, body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    border-bottom: black solid 1px;
+    gap: 30px;
+    padding-bottom: 50px;
 }
+
 #menu_opciones div{
     width: 400px;
     margin-top: 50px;
+    background-color: white;
+}
+
+.div_menu_proyectos{
+    box-shadow: 4px 4px 4px 4px lightgrey;
+}
+
+.div_menu_muebles{
+    box-shadow: 4px 4px 4px 4px lightgrey;
+}
+
+.div_menu_ejemplos{
+    box-shadow: 4px 4px 4px 4px lightgrey;
 }
 
 #menu_opciones div h4{
@@ -67,6 +85,16 @@ html, body{
     font-family: "Khand";
     font-size: 40px;
     margin: 10px;
+}
+
+#menu_opciones div a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu_opciones p {
+    text-align: justify;
+    padding: 20px;
 }
 
 .menu_imagenes{
@@ -81,4 +109,8 @@ html, body{
 .text {
     text-decoration: none;
     color: black;
+}
+
+.pie {
+    background-color: #A0A0A0;
 }
