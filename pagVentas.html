@@ -12,9 +12,7 @@
     <title>Calculadora de Total</title>
     <style>
         /* Estilo básico para el total */
-        #total {
-            font-weight: bold;
-        }
+        
     </style>
 </head>
 <body>
@@ -34,99 +32,113 @@
     <div class="total">
     <h1>Productos</h1>
             <!-- Total -->
-            <h2>Total: <div id="total"> €0</div> </h2>
+            <h2>Total: <div id="total"> 0€</div> </h2>
             
     
             <script>
                 // Variables para llevar un seguimiento de las unidades y el total
-                let unidadesProducto1 = 0;
-                let unidadesProducto2 = 0;
+                const unidades = {
+                    producto1: 0,
+                    producto2: 0,
+                    producto3: 0,
+                    producto4: 0,
+                    producto5: 0
+                };
+            
+                const precios = {
+                    producto1: 500,
+                    producto2: 1000,
+                    producto3: 750,
+                    producto4: 1200,
+                    producto5: 900
+                };
+            
                 let total = 0;
-    
+            
                 // Función para agregar unidades de un producto
-                function agregar(valor) {
-                    unidadesProducto1 += valor === 500 ? 1 : 0;
-                    unidadesProducto2 += valor === 1000 ? 1 : 0;
-                    total += valor;
+                function agregar(precio, producto) {
+                    unidades[producto]++;
+                    total += precio;
                     actualizarPantalla();
                 }
-    
+            
                 // Función para quitar unidades de un producto
-                function quitar(valor) {
-                    if ((valor === 500 && unidadesProducto1 > 0) || (valor === 1000 && unidadesProducto2 > 0)) {
-                        unidadesProducto1 -= valor === 500 ? 1 : 0;
-                        unidadesProducto2 -= valor === 1000 ? 1 : 0;
-                        total -= valor;
+                function quitar(precio, producto) {
+                    if (unidades[producto] > 0) {
+                        unidades[producto]--;
+                        total -= precio;
                         actualizarPantalla();
                     }
                 }
-    
+            
                 // Función para actualizar la pantalla con los valores actuales
                 function actualizarPantalla() {
-                    document.getElementById('producto1').textContent = unidadesProducto1;
-                    document.getElementById('producto2').textContent = unidadesProducto2;
-                    document.getElementById('total').textContent = '€' + total;
+                    for (const producto in unidades) {
+                        document.getElementById(producto).textContent = unidades[producto];
+                    }
+                    document.getElementById('total').textContent =  total + '€';
                 }
             </script>
         </div>
-    <div class="contenedor">
+    <div class="contenedorinterno">
         
         
         <!-- Producto 1 -->
         <div class="producto">
-            <h2>Sofá de Diseño - €500</h2>
+            
             <img src="img/pagVentas/sofa.jpg" ><br>
-            <button onclick="quitar(500)">Quitar</button>
+            <h2>Sofá de Diseño - 500€</h2>
+            <button onclick="quitar(500, 'producto1')">-</button>
             <span id="producto1">0</span> unidades
-            <button onclick="agregar(500)">Agregar</button>
+            <button onclick="agregar(500, 'producto1')">+</button>
             
         </div>
 
         <!-- Producto 2 -->
         <div class="producto">
-            <h2>Marcos de Diseño - €1000</h2>
+            
             <img src="img/pagVentas/marcos.jpg"><br>
-            <button onclick="quitar(1000)">Quitar</button>
+            <h2>Marcos de Diseño - 1000€</h2>
+            <button onclick="quitar(1000, 'producto2')">-</button>
             <span id="producto2">0</span> unidades
-            <button onclick="agregar(1000)">Agregar</button>
+            <button onclick="agregar(1000, 'producto2')">+</button>
             
         </div>
 
         <!-- Producto 3 -->
         <div class="producto">
-            <h2>Sofá - €500</h2>
+            
             <img src="img/pagVentas/sofa.jpg"><br>
-            <button onclick="quitar(500)">Quitar</button>
-            <span id="producto2">0</span> unidades
-            <button onclick="agregar(500)">Agregar</button>
+            <h2>Sofá - 750€</h2>
+            <button onclick="quitar(750, 'producto3')">-</button>
+            <span id="producto3">0</span> unidades
+            <button onclick="agregar(750, 'producto3')">+</button>
             
         </div>
 
         <!-- Producto 4 -->
         <div class="producto">
-            <h2>Aparador de madera - €1000</h2>
+            
             <img src="img/pagVentas/aparador-madera.jpg"><br>
-            <button onclick="quitar(1000)">Quitar</button>
-            <span id="producto2">0</span> unidades
-            <button onclick="agregar(1000)">Agregar</button>
+            <h2>Aparador de madera - 1200€</h2>
+            <button onclick="quitar(1200, 'producto4')">-</button>
+            <span id="producto4">0</span> unidades
+            <button onclick="agregar(1200, 'producto4')">+</button>
                 
         </div>
 
                 <!-- Producto 5 -->
                 <div class="producto">
-                    <h2>Marcos de Diseño - €1000</h2>
+                    
                     <img src="img/pagVentas/marcos.jpg"><br>
-                    <button onclick="quitar(1000)">Quitar</button>
-                    <span id="producto2">0</span> unidades
-                    <button onclick="agregar(1000)">Agregar</button>
+                    <h2>Marcos - 900€</h2>
+                    <button onclick="quitar(900, 'producto5')">-</button>
+                    <span id="producto5">0</span> unidades
+                    <button onclick="agregar(900, 'producto5')">+</button>
                         
                 </div>
 
-        <style>
-            img {
-                max-width: 350px;
-            }
-        </style>
+        
 
         
     </div>
