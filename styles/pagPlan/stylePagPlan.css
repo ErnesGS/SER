@@ -1,0 +1,21 @@
+.intro{
+    background-image: url('fondo_ladrillo.jpeg') ;
+    min-height: 60vh;
+}
+.menu{
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+}
+.text{
+    color: black;
+}
+.special{
+    color: #CDD1D6;
+}
+#tabla{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
