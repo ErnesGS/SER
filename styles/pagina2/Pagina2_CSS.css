@@ -47,7 +47,7 @@ html, body{
     width: 90px;
 }
 
-.menu_opciones {
+#menu_opciones {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,12 +55,12 @@ html, body{
     gap: 10px;
     border-bottom: black solid 1px;
 }
-.menu_opciones div{
+#menu_opciones div{
     width: 400px;
     margin-top: 50px;
 }
 
-.menu_opciones div h4{
+#menu_opciones div h4{
     width: 400px;
     text-align: center;
     font-family: "Khand";
