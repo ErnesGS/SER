@@ -1,9 +1,11 @@
 .intro{
     background-image: url('fondo_ladrillo.jpeg') ;
-    min-height: 60vh;
+    min-height: 50vh;
 }
 .menu{
     justify-content: space-around;
+    background-color: white;
+    opacity: 50%;
 }
 a{
     text-decoration: none;
@@ -11,11 +13,39 @@ a{
 .text{
     color: black;
 }
-.special{
-    color: #CDD1D6;
+#selecionado{
+    border-left: black solid 1px;
+    border-right: black solid 1px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 #tabla{
     margin: auto;
     display: flex;
     flex-direction: row;
+}
+#cuerpo{
+    display: flex;
+    flex-direction: row;
+}
+#dami{
+    width: 50%;
+
+}
+#diseño{
+    background-color: gray;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+#Crear_tabla{
+    margin: auto;
+    width: 50%;
+}
+table{
+    margin: auto;
+}
+.celda{
+    width: 20px;
+    height: 20px;
 }

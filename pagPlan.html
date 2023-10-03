@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/pagPlan/stylePagPlan.css">
+		<script src="script/pagPlan/script.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
@@ -14,31 +15,30 @@
 				<div class="menu">
 					<a href="index.html" class="text">Inicio</a>
 					<a href="pagVentas.html" class="text">Catálogo</a>
-                    <a href="PagEjemplo.html" class="special">Ejemplos</a>
-                    <a href="pagina2.html" class="special">Volver</a>
+					<a href="#" id="selecionado">Diseño</a>
+					<a href="PagEjemplo.html" class="text">Ejemplos</a>
+					<a href="pagina2.html" class="text">Volver</a>
 				</div>
 				<div class="titulo">
 					<h1>Interiorismo Susana</h1>
 				</div>
                 <div id="tabla">
                     <div id="input">
-                        <input type="text" id="ancho" value="Ancho">
-                        <br>
-                        <input type="text" id="ancho" value="Largo">
+                        <input type="text" id="ancho" placeholder="Ancho">
+						<br>
+						<input type="text" id="largo" placeholder="Largo">
+
                     </div>
-                    <button>Generar</button>
+                    <button id="generar">Generar</button>
                 </div>
-				<div class="info">
-					<a href="#descrip"><img src="img/pagina2_menu/flecha_abajo.png"></a>
-				</div>
 			</div>
-            <div>
-                <div><!--Parte del catalogo de imagenes-->
+            <div id="cuerpo">
+                <div id="dami"><!--Parte del catalogo de imagenes-->
 
                 </div>
-                <div id="Crear_tabla">
+                <div id="diseño">
                     <h3>Empieza a diseñar</h3>
-                    <div><!--Crear la tabla aquí-->
+                    <div id="Crear_tabla"><!--Crear la tabla aquí-->
                     </div>
                 </div>
             </div>
