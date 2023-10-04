@@ -11,12 +11,22 @@ body{
     background-color: white;
     opacity: 50%;
 }
-a{
-    text-decoration: none;
-}
+
+
 .text{
     color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 25px;
 }
+
+.text:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+
 #selecionado{
     border-left: black solid 1px;
     border-right: black solid 1px;
