@@ -1,10 +1,6 @@
-
-
 window.onload = function() {
     const crear = document.getElementById('generar');
     crear.addEventListener('click', crearTabla);
-    const silla = document.getElementById('sillas');
-    silla.addEventListener('click', filtrarMueble);
 };
 function cambiarColorCelda(celda) {
     if (celda.style.backgroundColor === 'rgb(243, 229, 171)') {
@@ -41,3 +37,38 @@ function crearTabla() {
         contenedorTabla.appendChild(tabla);
     }  
 }
+
+function filtrar(categoria) {
+    const imagenes = document.querySelectorAll('#galeria img');
+
+    imagenes.forEach(imagen => {
+        const clases = imagen.classList;
+
+        if (categoria === 'todo' || clases.contains(categoria)) {
+            imagen.style.display = 'block';
+        } else {
+            imagen.style.display = 'none';
+        }
+    });
+
+    // Resaltar la opción seleccionada
+    const opciones = document.querySelectorAll('#muebles h3');
+    opciones.forEach(opcion => {
+        opcion.classList.remove('selected');
+    });
+
+    const opcionSeleccionada = document.getElementById(categoria);
+    opcionSeleccionada.classList.add('selected');
+}
+
+// Asignar un evento click a cada opción de filtrado
+const opcionesFiltrado = document.querySelectorAll('#muebles h3');
+opcionesFiltrado.forEach(opcion => {
+    opcion.addEventListener('click', () => {
+        const categoria = opcion.id;
+        filtrar(categoria);
+    });
+});
+
+// Inicialmente mostrar todas las imágenes
+filtrar('todo');
