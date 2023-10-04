@@ -24,7 +24,6 @@ function crearTabla() {
                 celda.classList.add('celda')
                 x += 1 
                 celda.id = 'celda' + x;
-                
                 celda.textContent = ""; 
                 celda.style.border = 'black dashed 1px';  
                 celda.addEventListener('click', function() {
@@ -90,9 +89,12 @@ function dropCelda(event, celdaId) {
     event.preventDefault();
 
     var imageUrl = event.dataTransfer.getData('text/plain');
-    
-    document.getElementById(celdaId).style.backgroundImage = 'url(' + imageUrl + ')';
-    document.getElementById(celdaId).style.backgroundSize = 'cover';
-    document.getElementById(celdaId).style.backgroundRepeat = 'no-repeat';
+    const celda = document.getElementById(celdaId)
+    const fondoCelda = getComputedStyle(celda).backgroundColor;
+    if (fondoCelda === 'rgb(243, 229, 171)') {
+        document.getElementById(celdaId).style.backgroundImage = 'url(' + imageUrl + ')';
+        document.getElementById(celdaId).style.backgroundSize = 'cover';
+        document.getElementById(celdaId).style.backgroundRepeat = 'no-repeat';
+    }
 }
 
