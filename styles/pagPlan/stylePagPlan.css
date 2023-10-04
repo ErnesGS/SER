@@ -79,6 +79,7 @@ body{
     background-color: #E9E9EB;
     width: 50%;
     margin-left: auto;
+    margin-bottom: 20px;
     text-align: center;
 }
 #Crear_tabla{
@@ -90,6 +91,7 @@ table{
     margin: auto;
     max-height: 100px;
     background-color: white;
+    border-collapse: collapse;
 }
 .celda{
     width: 40px;
