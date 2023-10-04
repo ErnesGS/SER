@@ -1,11 +1,22 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+body{
+    background-color: #E9E9EB;
 }
-
-.contenedor {
+.intro{
+    background-image: url('../fondo_ladrillo.jpg') ;
+    min-height: 50vh;
+}
+.menu{
+    justify-content: space-around;
+    background-color: white;
+    opacity: 50%;
+}
+a{
+    text-decoration: none;
+}
+.text{
+    color: black;
+}
+.formulario {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -14,7 +25,10 @@ body {
     border-radius: 5px;
     margin-top: 2%;
 }
-
+form{
+    width: 80%;
+    margin: auto;
+}
 .registration-form {
     text-align: left;
 }

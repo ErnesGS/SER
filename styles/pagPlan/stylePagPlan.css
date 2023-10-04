@@ -82,6 +82,7 @@ table{
     margin: auto;
     max-height: 100px;
     background-color: white;
+    border-collapse: collapse;
 }
 .celda{
     width: 40px;

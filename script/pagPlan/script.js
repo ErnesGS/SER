@@ -16,17 +16,29 @@ function crearTabla() {
     const cuerpoTabla = document.createElement('tbody');
 
     if (alto <= 15 && ancho<= 15){
+        let x = 0;
         for (let i = 1; i <= alto; i++) {
             const fila = document.createElement('tr');
             for (let j = 1; j <= ancho; j++) {
                 const celda = document.createElement('td');
                 celda.classList.add('celda')
+                x += 1 
+                celda.id = 'celda' + x;
+                
                 celda.textContent = ""; 
                 celda.style.border = 'black dashed 1px';  
                 celda.addEventListener('click', function() {
                     cambiarColorCelda(celda);
                 });
+                celda.ondrop = function(event) {
+                    dropCelda(event, celda.id);
+                };
+                celda.ondragover = function(event) {
+                    allowDrop(event);
+                };
                 fila.appendChild(celda);
+
+                
             }
             cuerpoTabla.appendChild(fila);
         }
@@ -69,6 +81,18 @@ opcionesFiltrado.forEach(opcion => {
         filtrar(categoria);
     });
 });
-
-// Inicialmente mostrar todas las imágenes
 filtrar('todo');
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function dropCelda(event, celdaId) {
+    event.preventDefault();
+
+    var imageUrl = event.dataTransfer.getData('text/plain');
+    
+    document.getElementById(celdaId).style.backgroundImage = 'url(' + imageUrl + ')';
+    document.getElementById(celdaId).style.backgroundSize = 'cover';
+    document.getElementById(celdaId).style.backgroundRepeat = 'no-repeat';
+}
+
