@@ -10,12 +10,28 @@ body{
     background-color: white;
     opacity: 50%;
 }
-a{
-    text-decoration: none;
-}
+
 .text{
     color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 25px
 }
+
+.text:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+
+#selecionado{
+    border-left: black solid 3px;
+    border-right: black solid 3px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .formulario {
     max-width: 400px;
     margin: 0 auto;
@@ -31,11 +47,6 @@ form{
 }
 .registration-form {
     text-align: left;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 
 label {
