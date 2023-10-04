@@ -31,24 +31,40 @@ a{
     display: flex;
     flex-direction: row;
 }
-#dami{
-    width: 50%;
+#dami {
+    width: 50%; 
     margin-left: 20px;
 }
-#muebles{
+
+#muebles {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border-bottom: black 1px solid;
+    width: 100%;
 }
-#muebles + div{
-    width: 80%;
+
+#muebles h3.selected {
+    font-weight: bold;
+}
+
+
+#muebles + div {
+    width: 100%;
     margin: auto;
 }
-.cama,.sofa,.silla,.mesa,.estan {
+
+#imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.camas,.sofas,.sillas,.mesas,.estanterias {
     width: 20%;
     height: 150px;
     margin: 10px;
+    margin-left: 20px;
 }
 #diseño{
     background-color: #E9E9EB;
@@ -69,4 +85,18 @@ table{
 .celda{
     width: 40px;
     height: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+#muebles h3.selected {
+    font-weight: bold;
+    color: #333;
+}
+
+#muebles h3:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
