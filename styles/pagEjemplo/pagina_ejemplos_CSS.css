@@ -109,6 +109,8 @@ body{
     box-shadow: 4px 4px 4px 4px lightgrey;
     align-self: flex-start;
     margin: 0 40px 40px 0;
+    text-decoration: none;
+    color: black;
     transition: background-color 0.2s ease;
 }
 
