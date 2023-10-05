@@ -45,14 +45,27 @@ html, body{
     flex-flow: row;
     flex-wrap: nowrap;
     gap: 10px;
+    padding: 10px 20px 0 0;
 }
 
-.menu div + div{
+.menu_arriba a{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 10px;
-    text-decoration: none;
+    align-items: center;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+.menu_arriba a:hover{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu_arriba img{
+    margin-right: 7px;
+    margin-top: 2px;
 }
 
 .titulo{
@@ -71,6 +84,7 @@ html, body{
     height: 40px;
     opacity: 70%;
     border: none;
+    transition: 1s;
 }
 
 .titulo button:hover{
@@ -85,6 +99,7 @@ html, body{
 .info{
     align-content: center;
     margin: auto;
+    transition: 1s;
 }
 
 .info:hover{
