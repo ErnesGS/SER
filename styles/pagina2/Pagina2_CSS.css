@@ -74,10 +74,25 @@ html, body{
     padding-bottom: 50px;
 }
 
-#menu_opciones div{
+#menu_opciones a{
     width: 400px;
     margin-top: 50px;
     background-color: white;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+#menu_opciones a:hover{
+    width: 420px;
+    margin-top: 50px;
+    background-color: grey;
+    transition: .5s;
+}
+
+#menu_opciones .texto_opciones {
+    width: 400px;
+    margin: auto;
 }
 
 .div_menu_proyectos{
@@ -100,18 +115,13 @@ html, body{
     margin: 10px;
 }
 
-#menu_opciones div a{
-    text-decoration: none;
-    color: black;
-}
-
 #menu_opciones p {
     text-align: justify;
     padding: 20px;
 }
 
 .menu_imagenes{
-    width: 400px;
+    width: 100%;
 }
 
 #flecha_abajo_info{
